@@ -1,5 +1,5 @@
+import { CourseSelection } from "@/components/dashboard/courses/course-selection"
 import { Metadata } from "next"
-import { CourseSelection } from "@/components/courses/course-selection"
 
 export const metadata: Metadata = {
   title: "Courses | RanaLearnHub",
