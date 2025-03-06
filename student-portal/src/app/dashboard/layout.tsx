@@ -10,14 +10,15 @@ export default function DashboardLayout({
 }) {
   return (
     <SidebarProvider>
-      <div className="relative flex min-h-screen">
-        <DashboardSidebar />
-        <div className="flex-1">
-          <DashboardHeader />
-          <main className="flex-1 space-y-4 p-4 md:p-8">{children}</main>
-        </div>
+      <DashboardSidebar />
+      <div className="flex-1">
+        <DashboardHeader />
+        <main className="flex-1 space-y-4 p-4 md:p-8 w-full">
+          <div className=" mx-auto max-w-full">
+            {children}
+          </div>
+        </main>
       </div>
     </SidebarProvider>
   )
 }
-

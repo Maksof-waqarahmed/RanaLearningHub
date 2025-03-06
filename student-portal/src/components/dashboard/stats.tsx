@@ -25,10 +25,10 @@ function StatsCard({ title, value, icon }: StatsCardProps) {
 export function DashboardStats() {
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-      <StatsCard title="Enrolled Courses" value="04" icon={<BookOpen className="h-4 w-4 text-muted-foreground" />} />
-      <StatsCard title="Completed Courses" value="02" icon={<Award className="h-4 w-4 text-muted-foreground" />} />
-      <StatsCard title="Assignments" value="01" icon={<ClipboardList className="h-4 w-4 text-muted-foreground" />} />
-      <StatsCard title="Questions" value="01" icon={<HelpCircle className="h-4 w-4 text-muted-foreground" />} />
+      <StatsCard title="Enrolled Courses" value="04" icon={<BookOpen className="h-4 w-4 text-[#6828CE]" />} />
+      <StatsCard title="Completed Courses" value="02" icon={<Award className="h-4 w-4 text-[#6828CE]" />} />
+      <StatsCard title="Assignments" value="01" icon={<ClipboardList className="h-4 w-4 text-[#6828CE]" />} />
+      <StatsCard title="Questions" value="01" icon={<HelpCircle className="h-4 w-4 text-[#6828CE]" />} />
     </div>
   )
 }

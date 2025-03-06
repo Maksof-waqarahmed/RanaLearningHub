@@ -104,13 +104,13 @@ const user = {
   avatar: "/avatars/shadcn.jpg",
 }
 
-export function DashboardSidebar({ ...props }:React.ComponentProps<typeof Sidebar>) {
+export function DashboardSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const pathname = usePathname()
 
   return (
     <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader className="p-4">
-        <Logo size="lg"  />
+      <SidebarHeader>
+        <Logo size="lg" />
       </SidebarHeader>
       <SidebarContent>
         <SidebarMenu>
@@ -131,11 +131,8 @@ export function DashboardSidebar({ ...props }:React.ComponentProps<typeof Sideba
           ))}
         </SidebarMenu>
       </SidebarContent>
-      <SidebarFooter className="border-t border-border p-4">
-        {/* <ThemeToggle /> */}
-        <NavUser user={user}/>
-
-
+      <SidebarFooter>
+        <NavUser user={user} />
       </SidebarFooter>
     </Sidebar>
   )
