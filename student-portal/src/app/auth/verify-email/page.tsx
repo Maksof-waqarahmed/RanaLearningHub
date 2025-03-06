@@ -1,13 +1,14 @@
-import { Metadata } from "next"
-import { LoginForm } from "@/components/auth/login-form"
-import { GraduationCap } from 'lucide-react'
+import type { Metadata } from "next"
+
+import { GraduationCap } from "lucide-react"
+import { VerifyEmailForm } from "@/components/auth/verify-email-form"
 
 export const metadata: Metadata = {
-  title: "Login | RanaLearnHub",
-  description: "Login to your RanaLearnHub account",
+  title: "Verify Email | RanaLearnHub",
+  description: "Verify your email address for RanaLearnHub",
 }
 
-export default function LoginPage() {
+export default function VerifyEmailPage() {
   return (
     <div className="min-h-svh bg-gradient-to-br from-[#1a0b2e] to-[#2d1b4e]">
       <div className="container mx-auto flex flex-col items-center justify-center p-6 md:p-10">
@@ -22,21 +23,12 @@ export default function LoginPage() {
               </span>
             </div>
           </div>
-          
-          <div className="flex flex-col items-center">
-            <div className="text-sm font-medium text-purple-200/80 uppercase tracking-widest">
-              Presented by
-            </div>
-            <div className="mt-1 text-xl font-bold bg-gradient-to-r from-yellow-200 to-yellow-100 bg-clip-text text-transparent">
-              SIR WAQAR RANA
-            </div>
-          </div>
         </div>
-        
+
         <div className="w-full max-w-md">
-          <LoginForm />
+          <VerifyEmailForm />
         </div>
-        
+
         <div className="mt-8 text-center text-sm text-purple-200/60">
           © {new Date().getFullYear()} RanaLearnHub. All rights reserved.
         </div>
@@ -44,3 +36,4 @@ export default function LoginPage() {
     </div>
   )
 }
+

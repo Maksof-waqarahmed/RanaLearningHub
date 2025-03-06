@@ -62,11 +62,6 @@ const menuItems = [
     href: "/dashboard/announcements",
   },
   {
-    title: "Students",
-    icon: Users,
-    href: "/dashboard/students",
-  },
-  {
     title: "Questions",
     icon: HelpCircle,
     href: "/dashboard/questions",
@@ -76,21 +71,21 @@ const menuItems = [
     icon: Award,
     href: "/dashboard/certificates",
   },
-  {
-    title: "Earnings",
-    icon: DollarSign,
-    href: "/dashboard/earnings",
-  },
-  {
-    title: "Reports",
-    icon: BarChart2,
-    href: "/dashboard/reports",
-  },
-  {
-    title: "Add-ons",
-    icon: PlusCircle,
-    href: "/dashboard/add-ons",
-  },
+  // {
+  //   title: "Earnings",
+  //   icon: DollarSign,
+  //   href: "/dashboard/earnings",
+  // },
+  // {
+  //   title: "Reports",
+  //   icon: BarChart2,
+  //   href: "/dashboard/reports",
+  // },
+  // {
+  //   title: "Add-ons",
+  //   icon: PlusCircle,
+  //   href: "/dashboard/add-ons",
+  // },
   {
     title: "Settings",
     icon: Settings,
